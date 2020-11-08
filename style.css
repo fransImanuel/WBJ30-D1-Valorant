@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+/* CSS Reset start */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* CSS Reset end */
+
+.container{
+    position: relative;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* Header Start */
+.header{
+    width: 100%;
+    height: 65px;
+    background-color: black;
+    z-index: 1;
+}
+
+.header .title {
+    height: 100%;
+    width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header .title img#title-logo {
+    height: 100%;
+}
+
+.header .title img#title-text{
+    height: 100%;
+    margin-left: -20px;
+}
+
+/* Header End */
+
+
+/* Content Start */
+.content{
+    width: 100%;
+    position: relative;
+}
+
+.content .video{
+    background-color: #fa4454;
+}
+
+.content .video:before{
+    content: "";
+    position: absolute;
+          width: 0;
+          height: 0;
+          border-bottom: 45px solid #042e27;
+          border-right: 45px solid transparent;
+          bottom: 0;
+          z-index: 3;
+}
+
+video{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -0.5px;
+    display: block;
+    border: 0px;
+    width: 50%;
+}
+
+/* Content End */
+
+
+/* Subhead start */
+
+.subhead{
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    font-family: 'Anton', Calibri, sans-serif;
+    font-size: 42px;
+    background-color: #042e27;
+    box-sizing: border-box;
+}
+
+.subhead h1{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #ece8e1;
+}
+
+/* Subhead end */
+
+
+
+/* Footer Start */
+
+.footer{
+    width: 100%;
+    /* background-color: blueviolet; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+   justify-items: center;
+   background-color: #ece8e1;
+}
+
+.footer .agent-selection img{
+    width: 100%;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.agent-selection{
+    background-image: url(./img/trapesium.svg);
+    background-repeat: no-repeat;
+    background-position: 140%;
+    background-size: 500%;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.agent-selection:hover{
+    background-position: 80%;
+}
+
+/* Footer End */
